@@ -14,7 +14,7 @@ function asignarTextoElemento(elemento, texto) {
 }    
 
 //encapsulacion del evento que quiero que se ejecute
-function verificarIntentp() {
+function verificarIntento() {
     let numeroDeUsuario = parseInt(document.getElementById('valorUsuario').value);
    // console.log(typeof(numeroDeUsuario))
    // console.log(numeroDeUsuario);
