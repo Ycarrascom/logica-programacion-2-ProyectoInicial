@@ -19,7 +19,7 @@ function verificarIntentp() {
    // console.log(numeroDeUsuario);
    // console.log(numeroSecreto);
    // console.log(numeroDeUsuario === numeroSecreto);//booleano de forma implicita
-    
+    console.log(intentos);
     if (numeroDeUsuario === numeroSecreto) {
         asignarTextoElemento('p', 'Felicidades, has adivinado el numero secreto!');
     } else{ 
@@ -28,6 +28,7 @@ function verificarIntentp() {
         } else {
             asignarTextoElemento('p', 'El numero secreto es mayor, intenta de nuevo!');
         }
+        intentos++
     }
     return;
     //alert('click desde el boton.');
