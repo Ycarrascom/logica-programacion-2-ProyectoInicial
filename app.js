@@ -13,11 +13,11 @@ function asignarTextoElemento(elemento, texto) {
 
 //encapsulacion del evento que quiero que se ejecute
 function verificarIntentp() {
-    let numeroDeUsuario = document.getElementById('valorUusuario').value;
+    let numeroDeUsuario = parseInt(document.getElementById('valorUusuario').value);
     console.log(typeof(numeroDeUsuario))
     console.log(numeroDeUsuario);
     console.log(numeroSecreto);
-    console.log(numeroDeUsuario == numeroSecreto);//booleano de forma implicita
+    console.log(numeroDeUsuario === numeroSecreto);//booleano de forma implicita
     
     return;
     //alert('click desde el boton.');
