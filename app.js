@@ -69,4 +69,4 @@ function condicionesIniciales() {
     intentos = 1;
 
 }
-mensajesIniciales();
+condicionesIniciales();
