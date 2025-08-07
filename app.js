@@ -14,10 +14,10 @@ function asignarTextoElemento(elemento, texto) {
 //encapsulacion del evento que quiero que se ejecute
 function verificarIntentp() {
     let numeroDeUsuario = parseInt(document.getElementById('valorUsuario').value);
-    console.log(typeof(numeroDeUsuario))
-    console.log(numeroDeUsuario);
-    console.log(numeroSecreto);
-    console.log(numeroDeUsuario === numeroSecreto);//booleano de forma implicita
+   // console.log(typeof(numeroDeUsuario))
+   // console.log(numeroDeUsuario);
+   // console.log(numeroSecreto);
+   // console.log(numeroDeUsuario === numeroSecreto);//booleano de forma implicita
     
     if (numeroDeUsuario === numeroSecreto) {
         asignarTextoElemento('p', 'Felicidades, has adivinado el numero secreto!');
