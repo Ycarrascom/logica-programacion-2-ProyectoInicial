@@ -4,9 +4,9 @@ titulo.innerHTML = 'Juego del numero secreto';
 let parrafo = document.querySelector('p');
 parrafo.innerHTML = 'Indica un numero del 1 al 10';*/
 
-numeroSecreto = generarNumeroSecreto();
+let numeroSecreto = 0;
 console.log(numeroSecreto);
-let intentos = 1;
+let intentos = 0;
 
 function asignarTextoElemento(elemento, texto) {
     let elementoHTML = document.querySelector(elemento);
@@ -49,6 +49,24 @@ function generarNumeroSecreto() {
     
 }
 
+function reiniciarJuego() {
+//limpiarCaja();
+    limpiarCaja();
 
-asignarTextoElemento('h1', 'Juego del numero secreto!');
-asignarTextoElemento('p', 'Indica un numero del 1 al 10');
+//indicar mensaje de intervalo de numeros
+   condicionesIniciales();
+//generar el numero aleatorio lo volvemos a invocar desde la variable
+//deshabilitar el boton de nuevo juego
+    document.querySelector('#reiniciar').setAttribute('disabled', true);
+//inicializar los intentos
+  
+}    
+
+function condicionesIniciales() {
+    asignarTextoElemento('h1', 'Juego del numero secreto');
+    asignarTextoElemento('p', 'Indica un numero del 1 al 10');
+    numeroSecreto = generarNumeroSecreto();
+    intentos = 1;
+
+}
+mensajesIniciales();
