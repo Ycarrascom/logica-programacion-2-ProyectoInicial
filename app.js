@@ -29,10 +29,16 @@ function verificarIntentp() {
             asignarTextoElemento('p', 'El numero secreto es mayor, intenta de nuevo!');
         }
         intentos++
+        limpiarCaja();
     }
     return;
     //alert('click desde el boton.');
 }
+
+function limpiarCaja() {
+    let valorCaja = document.querySelector('#valorUsuario');
+    valorCaja.value = ''; 
+}    
 
 function generarNumeroSecreto() {
     return Math.floor(Math.random() * 10) + 1;
