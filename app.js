@@ -5,6 +5,7 @@ let parrafo = document.querySelector('p');
 parrafo.innerHTML = 'Indica un numero del 1 al 10';*/
 
 numeroSecreto = generarNumeroSecreto();
+let intentos = 1;
 
 function asignarTextoElemento(elemento, texto) {
     let elementoHTML = document.querySelector(elemento);
