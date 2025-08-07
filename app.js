@@ -21,7 +21,7 @@ function verificarIntentp() {
    // console.log(numeroDeUsuario === numeroSecreto);//booleano de forma implicita
     console.log(intentos);
     if (numeroDeUsuario === numeroSecreto) {
-        asignarTextoElemento('p', 'Felicidades, has adivinado el numero secreto!');
+        asignarTextoElemento('p', `Felicidades, has adivinado el numero secreto en ${intentos} ${(intentos === 1) ? 'vez' : 'veces'} !`);
     } else{ 
         if (numeroDeUsuario > numeroSecreto) {
             asignarTextoElemento('p', 'El numero secreto es menor, intenta de nuevo!');
