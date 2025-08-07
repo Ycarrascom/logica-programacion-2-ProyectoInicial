@@ -12,8 +12,10 @@ function asignarTextoElemento(elemento, texto) {
 }    
 
 //encapsulacion del evento que quiero que se ejecute
-function intentoDeUuario() {
-    alert('click desde el boton.');
+function verificarIntentp() {
+    let numeroDeUsuario = document.getElementById('valorUusuario').value;
+    return;
+    //alert('click desde el boton.');
 }
 
 function generarNumeroSecreto() {
@@ -22,6 +24,7 @@ function generarNumeroSecreto() {
     //return numeroSecreto;
     
 }
+
 
 asignarTextoElemento('h1', 'Juego del numero secreto!');
 asignarTextoElemento('p', 'Indica un numero del 1 al 10');
