@@ -22,6 +22,7 @@ function verificarIntento() {
     console.log(intentos);
     if (numeroDeUsuario === numeroSecreto) {
         asignarTextoElemento('p', `Felicidades, has adivinado el numero secreto en ${intentos} ${(intentos === 1) ? 'vez' : 'veces'} !`);
+        document.getElementById('reiniciar').removeAttribute('disabled');
     } else{ 
         if (numeroDeUsuario > numeroSecreto) {
             asignarTextoElemento('p', 'El numero secreto es menor, intenta de nuevo!');
