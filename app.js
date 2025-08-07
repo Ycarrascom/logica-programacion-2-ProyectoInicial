@@ -13,12 +13,21 @@ function asignarTextoElemento(elemento, texto) {
 
 //encapsulacion del evento que quiero que se ejecute
 function verificarIntentp() {
-    let numeroDeUsuario = parseInt(document.getElementById('valorUusuario').value);
+    let numeroDeUsuario = parseInt(document.getElementById('valorUsuario').value);
     console.log(typeof(numeroDeUsuario))
     console.log(numeroDeUsuario);
     console.log(numeroSecreto);
     console.log(numeroDeUsuario === numeroSecreto);//booleano de forma implicita
     
+    if (numeroDeUsuario === numeroSecreto) {
+        asignarTextoElemento('p', 'Felicidades, has adivinado el numero secreto!');
+    } else{ 
+        if (numeroDeUsuario > numeroSecreto) {
+            asignarTextoElemento('p', 'El numero secreto es menor, intenta de nuevo!');
+        } else {
+            asignarTextoElemento('p', 'El numero secreto es mayor, intenta de nuevo!');
+        }
+    }
     return;
     //alert('click desde el boton.');
 }
