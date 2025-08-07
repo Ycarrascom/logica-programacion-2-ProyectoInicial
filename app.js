@@ -5,6 +5,7 @@ let parrafo = document.querySelector('p');
 parrafo.innerHTML = 'Indica un numero del 1 al 10';*/
 
 numeroSecreto = generarNumeroSecreto();
+console.log(numeroSecreto);
 let intentos = 1;
 
 function asignarTextoElemento(elemento, texto) {
@@ -17,7 +18,6 @@ function verificarIntentp() {
     let numeroDeUsuario = parseInt(document.getElementById('valorUsuario').value);
    // console.log(typeof(numeroDeUsuario))
    // console.log(numeroDeUsuario);
-   // console.log(numeroSecreto);
    // console.log(numeroDeUsuario === numeroSecreto);//booleano de forma implicita
     console.log(intentos);
     if (numeroDeUsuario === numeroSecreto) {
