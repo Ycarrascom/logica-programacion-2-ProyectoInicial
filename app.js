@@ -36,8 +36,9 @@ function verificarIntento() {
 }
 
 function limpiarCaja() {
-    let valorCaja = document.querySelector('#valorUsuario');
-    valorCaja.value = ''; 
+   // let valorCaja = document.querySelector('#valorUsuario');
+   // valorCaja.value = ''; 
+   document.querySelector('#valorUsuario').value = '';
 }    
 
 function generarNumeroSecreto() {
